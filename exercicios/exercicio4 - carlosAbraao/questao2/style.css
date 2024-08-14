@@ -1,0 +1,38 @@
+body{
+     background-color: lightblue;
+}
+
+.um{
+    background-color: lightgreen;
+}
+
+
+/* 3 - Colocar uma imagem de fundo que permita a repetição em qualquer estilo e que não
+4 - acompanhe o deslocamento da página */
+.dois{
+    background: image(/*exemplo de imagem*/);
+    background-repeat: repeat;
+    margin: 0;
+}
+
+.cinco{
+    background: image(/*exemplo de imagem*/);
+    background-repeat: repeat-y;
+}
+
+.seis{
+    background: image(/*exemplo de imagem*/);
+    background-repeat: no-repeat;
+}
+
+.sete{
+    background: image(/*exemplo de imagem*/);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.oito{
+    background-image: image(/*exemplo de imagem*/);
+    background-repeat: no-repeat;
+    background: yellow;
+}
