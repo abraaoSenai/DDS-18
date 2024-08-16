@@ -1,0 +1,28 @@
+*{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(14, 14, 65);
+}
+.mainContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.loginBox{
+    min-height: 30vh;
+    min-width: 200px;
+    max-width: 20vw;
+    background-color: grey;
+
+    
+}
