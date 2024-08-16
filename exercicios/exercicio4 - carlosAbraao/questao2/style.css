@@ -1,0 +1,43 @@
+body{
+     background-color: lightblue;
+}
+
+.um{
+    background-color: lightgreen;
+}
+
+
+/* 3 - Colocar uma imagem de fundo que permita a repetição em qualquer estilo e que não
+4 - acompanhe o deslocamento da página */
+.dois{
+    background-image: url("download\ \(2\).jpg");
+    background-repeat: repeat;
+    margin: 0;
+    height: 500px;
+}
+
+.cinco{
+    background-image: url("download\ \(2\).jpg");
+    background-repeat: repeat-y;
+    height: 500px;
+}
+
+.seis{
+    background-image: url("download\ \(2\).jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+}
+
+.sete{
+    background-image: url("download\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 500px;
+}
+
+.oito{
+    background-image: url("download\ \(2\).jpg");
+    background-repeat: no-repeat;
+    background: yellow;
+    height: 500px;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Formulário</h1>
+
+
+        <p>Dados pessoais</p>
+
+        <form action="dadosPessoais" id="dadosPessoaisForm">
+            <div class="nomeContainer">
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome">
+            </div>
+            
+            <div class="enderecoContainer">
+                <label for="endereco">Endereço</label>
+                <input type="text" name="endereco" id="endereco">
+            </div>
+            
+
+            <div class="cidadeContainer">
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cidade" id="cidade">
+            </div>
+
+            <div class="estadoContainer">
+                <label for="estado">Estado</label>
+                <select name="estado" id="estado">
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="espiritoSanto">Espírito Santo</option>
+                    <option value="minasGerais">Minas Gerais</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="santaCatarina">Santa Catarina</option>
+                </select>
+            </div>
+        </form>
+        
+        <br>
+
+    
+
+        <form action="dadosProfissionais" id="dadosProfissionaisForm">
+            <p>Dados Profissionais</p>
+            <br>
+            
+
+            <div class="naturezaDocargoContainer">
+                <p>Natureza do cargo</p>
+                <input id="gerencia" name="gerencia" type="radio">
+                <label for="gerencia">Gerência</label>
+
+                <input id="financeira" name="financeira" type="radio">
+                <label for="financeira">Financeira</label>
+
+                <input id="recepcao" name="recepcao" type="radio">
+                <label for="recepcao">Recepção</label>
+
+                <input id="adminstrativo" name="administrativo" type="radio">
+                <label for="administrativo">Administrativo</label>
+
+                <input id="juridico" name="juridico" type="radio">
+                <label for="juridico">Jurídico</label>
+                
+                <Br></Br>
+                
+                <p>Área de interesse</p>
+                
+                <input type="checkbox" name="computacao" id="computacao">
+                <label for="computacao">Computação</label><br>
+
+                <input type="checkbox" name="biologia" id="biologia">
+                <label for="biologia">Biologia</label><br>
+
+                <input type="checkbox" name="meioAmbiente" id="meioAmbiente">
+                <label for="meioAmbiente">Meio Ambiente</label><br>
+
+                <input type="checkbox" name="engenharia" id="engenharia">
+                <label for="engenharia">Engenharia</label><br>
+
+                <input type="checkbox" name="historia" id="historia">
+                <label for="historia">História</label>
+
+
+                <br>
+                <br>
+
+                <p>Mini-currículo</p>
+                <TEXTarea></TEXTarea>
+
+            </div>
+
+            <button>Enviar</button>
+            
+            <button>Limpa</button>
+ 
+        </form>
+</body>
+</html>

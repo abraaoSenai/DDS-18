@@ -1,0 +1,25 @@
+#arialVermelha{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+#timeLines{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22pt;
+    color: green;
+}
+
+#sansSerif{
+    font-family: sans-serif;
+    font-size: 20pt;
+    color: blue;
+    font-style: italic   ;
+}
+
+#quatro{
+    color: yellow;
+    font-weight: 400;
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
