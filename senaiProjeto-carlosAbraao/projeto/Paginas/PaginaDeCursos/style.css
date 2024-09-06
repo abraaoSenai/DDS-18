@@ -1,0 +1,158 @@
+
+/* CORPO DA PÁGINA */
+
+.cursosDestaquesContainer{
+
+    width: 80vw;
+    margin: 0 50%;
+    transform: translateX(-50%);
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-rows: repeat(auto, 1fr);
+
+    gap: 2rem 2rem;
+
+    /* overflow: hidden; */
+
+
+    /* margin-bottom: 100px; */
+
+
+    
+}
+
+
+@media (max-width: 1000px) {
+    .cursosDestaquesContainer{
+        gap: 2rem 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .curso h3{
+        font-size: 1rem;
+    }
+
+    .curso p{
+        font-size: 0.7rem;
+    }
+
+    h2{
+        font-size: 	1.5rem !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .cursosDestaquesContainer{
+        gap: 1rem 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .cursosDestaquesContainer{
+        gap: 2rem 2rem;
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+
+.imagemCurso{
+    width: 100%;
+    margin-bottom: 1rem;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+h2{
+    font-size: 1.6rem;
+    
+}
+.curso{
+    box-shadow: 2px 2px 20px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+
+.curso h3{
+    margin-left: 1rem;
+
+    font-size: 1.1rem !important;
+}
+
+.curso h3, p{
+    margin-left: 1rem;
+
+    font-size: 0.8rem;
+}
+
+.curso> #preco{
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: 700;
+    /* color: rgb(16, 31, 99); */
+
+    /* text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.562); */
+}
+
+.matriculaBtn{
+    
+    background-color:rgb(32, 41, 173) ;
+
+    display: inline-block;
+    height: 2.5rem;
+    width: 6rem;
+
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    
+    margin: 1rem 50%;
+    /* margin-top: 1rem; */
+    transform: translateX(-50%);   
+
+    text-decoration: none;
+    
+    cursor: pointer;
+
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.matriculaBtn p{
+    display: inline-block;
+    text-align: center;
+
+    margin: 0;
+}
+
+.matriculaBtn:hover{
+    box-shadow: 1px 1px 10px black;
+    
+}
+
+.matriculaBtn>*{
+    transition: transform 0.2s ease-in-out;
+}
+
+.matriculaBtn:hover>*{
+    transform: scale(1.15);
+}
+
+/* rgb(16, 31, 99) */
+
+
+
+/* CORPO DA PÁGINA */
+
+
+
+

@@ -1,0 +1,473 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página inicial</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+
+            color: white;
+
+        }
+
+        body{
+            position: relative;
+            min-height: 100vh;
+            width: 100vw;
+            overflow-x: hidden;
+            background: rgb(44, 43, 43);
+
+            
+        }
+
+@media (min-width: 1000px) {
+            nav.header {
+                width: 360px !important;
+}
+
+            }
+@media (max-width: 1000px) {
+            nav.header {
+                min-width: 40%;
+                
+            }
+
+}
+
+@media (min-width: 700px){
+    nav.header{
+        margin-left: 20px;
+    }
+}
+        
+@media (max-width: 600px) {
+            nav.header {
+                display: none !important;
+
+                
+            }
+
+
+
+}
+
+@media (min-width: 600px) {
+            nav.header2 {
+                display: none !important;
+            }
+
+            .menuBtn{
+                display: none !important;
+            }
+
+}
+
+@media (max-width: 380px) {
+            .loginArea{
+                display: none !important;
+            }
+
+            .header2 *{
+                font-size: 0.8rem;
+
+            }
+
+}
+
+
+
+
+.ativado{
+    display: flex !important;
+}
+
+.desativado{
+    display: none !important;
+}
+
+.fechado{
+    width: 0px !important;
+    height: 0px !important;
+
+    transition: height 0.5s ease-in-out;
+}
+
+.aberto{
+    height: 140% !important;
+    width: 140px !important;
+}
+
+.menuBtn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 40px;
+    width: 40px;
+
+    gap: 26%;
+
+    box-shadow: 1px 1px 10px black;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.linha{
+    width: 80%;
+    height: 2px;
+    background-color: white;
+
+    border-radius: 2px;
+}
+
+
+
+        /* HEADER */
+        header{
+            background-color: #2029AD;
+            width: 92vw;
+            height: 80px;
+            padding: 0 2rem;
+            
+            border-radius: 50px 0;
+
+            border-bottom-left-radius: 50px;
+
+            display: flex;
+            flex-direction: row;
+
+            justify-content: flex-start;
+            align-items: center;
+
+            margin: 0 50%;
+            margin-bottom: 3rem;
+
+
+            transform: translateX(-50%);
+
+            gap: 8px;
+
+            box-shadow: 1px 1px 10px black;
+
+            position: relative;
+
+            z-index: 2;
+        }
+
+        .senaiLogo{
+            background-image: url(../../Assets/Icons/senaiLogo.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+
+            min-height: 40px;
+            min-width: 100px;
+
+            
+            
+            border-radius: 4px;
+            
+            cursor: pointer;
+
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .senaiLogo:hover{
+            box-shadow: 2px 2px 14px black;
+        }
+
+
+
+
+
+        .pesquisarBtn{
+            height: 40px;
+            min-width: 40px;
+            background-image: url(../../Assets/Icons/lupa.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            border-radius: 5px;
+            /* background-color: rgba(44, 43, 43, 0.795); */
+
+            cursor: pointer;
+            box-shadow: 1px 1px 10px black;
+
+            transition: transform 0.1s ease-in-out;
+        }
+
+        .pesquisarBtn:hover{
+            transform: scale(1.2);
+        }
+
+        nav.header{
+            
+            
+            height: 40px;
+            
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+
+
+            overflow: hidden;
+        }
+
+        nav.header2{
+            background-color: white;
+            
+            /* transform: translateY(50%); */
+            align-self: flex-start;
+
+            height: 0;
+            width: 140px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            /* padding: 6px; */
+
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+
+            position: relative;
+            top: auto;
+            z-index: 3;
+
+            overflow: hidden;
+
+            box-shadow: 1px 1px 10px black;
+
+            cursor: pointer;
+
+            transition: 0.5s height ease-in-out;
+
+
+        }
+        nav.header2 > *{
+            color: black !important;
+            background-color: #2029AD;
+            width: 100%;
+            text-align: center;
+            flex-grow: 1;
+
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            
+            border-radius: 1px;
+            box-shadow: 0px 0px 1px black;
+
+            text-shadow: none !important;
+            
+
+            
+        }
+
+        nav.header2 > a:active{
+            background-color: #434ab4;
+        }
+
+        .fecharBtn{
+            width: 100%;
+            height: 20px;
+            background-color: red !important;
+        }
+
+        .closeIcon{
+            height: 20px;
+            width: 20px;
+            background-image: url(../../Assets/Icons/close.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header a.f1{
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+
+            text-wrap: nowrap;
+
+            position: relative;
+
+            transition: text-shadow 0.4s ease-in-out;
+        }
+
+        header a.f1::before{
+            content: "";
+            position: absolute;
+
+            left: 50%;
+            bottom: -3px;
+            transform: translateX(-50%);
+            
+            height: 3px;
+            width: 0%;
+            background-color: white;
+
+
+            transition: width 0.4s ease-in-out;
+
+        }
+
+        header a.f1:hover::before{
+            width: 100%;
+            
+        }
+
+        header a.f1:hover{
+            text-shadow: 1px 1px 6px white;
+        }
+
+        .loginArea{
+
+            /* background-color: white; */
+            
+            position: absolute;
+            right: 0px;
+
+            transform: translateX(-100%);
+
+        }
+        /* HEADER */
+
+
+
+        /* FOOTER */
+        .espacamentoContainer{
+            height: 10rem;
+        }
+
+        footer{
+            position: absolute;
+            bottom: 0;
+            background-color: #2029AD;
+            width: 100%;
+            height: 4rem;
+            padding: 10px 0px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 10rem;
+        }
+        /* FOOTER */
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../PaginaInicial/index.html" class="senaiLogo"></a>
+       
+        
+        <div class="pesquisarBtn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <nav class="header">
+            
+            <a href="../SobreNos/index.html" class="f1" id="sobreNos">Sobre nós</a>
+            <a href="../PaginaDeCursos/index.html" class="f1" id="cursos">Cursos</a>
+            <a href="../FaleConosco/index.html" class="f1" id="faleConosco">Fale Conosco</a>
+            
+        </nav>
+        
+        <nav class="header2 fechado">
+
+            <div class="fecharBtn">
+                <div class="closeIcon"></div>
+            </div>
+            
+            <a href="../SobreNos/index.html" class="f1" id="sobreNos">Sobre nós</a>
+            <a href="../PaginaDeCursos/index.html" class="f1" id="cursos">Cursos</a>
+            <a href="../FaleConosco/index.html" class="f1" id="faleConosco">Fale Conosco</a>
+            <a href="../Login/index.html" class="f1" id="login">Login</a>
+            
+        </nav>
+
+        <div class="menuBtn ">
+            <div class="linha" id="linha1"></div>
+            <div class="linha" id="linha2"></div>
+            <div class="linha" id="linha3"></div>
+        </div>
+
+        <div class="loginArea">
+
+
+            <div class="desconectado">
+                <a href="../Login/index.html" class="f1">Login</a>
+            </div>
+        </div>
+
+    </header>
+    
+
+
+
+
+
+    
+
+
+
+    <div class="espacamentoContainer"></div>
+    <footer>
+        <p style="
+        height: 100%;
+        text-align: center;
+        font-size: 0.7rem;">
+
+            Copyright © 2023 - SENAI ES - Pelo futuro do trabalho
+            <br>
+            Núcleo Digital - Gerência Executiva de Comunicação e Marketing da Findes
+            <br>
+            Findes - Federação das Indústrias do Espírito Santo
+        </p>
+    </footer>
+
+
+    <script >
+        let menuBtn = document.querySelector(".menuBtn")
+        let navHeader2 = document.querySelector("nav.header2")
+        let fecharBtn = document.querySelector(".fecharBtn")
+
+
+
+        menuBtn.addEventListener("click", ()=>{
+            menuBtn.classList.toggle("desativado")
+            navHeader2.classList.toggle("fechado")
+            navHeader2.classList.toggle("aberto")
+            console.log("ahma")
+        })
+
+        fecharBtn.addEventListener("click", ()=>{
+            menuBtn.classList.toggle("desativado")
+            navHeader2.classList.toggle("fechado")
+            navHeader2.classList.toggle("aberto")
+        })
+
+        
+    </script>
+</body>
+</html>
+
+
